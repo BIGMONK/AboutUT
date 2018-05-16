@@ -1,0 +1,38 @@
+[
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon1.png"，
+        "称号": "见习骑手",
+        "升级条件": "初始等级",
+        "奖励": "1公里=5积分"
+    },
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon2.png",
+        "称号": "入门骑手",
+        "升级条件": "累积骑行里程达到150公里",
+        "奖励": "1公里=10积分"
+    },
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon3.png",
+        "称号": "风行者",
+        "升级条件": "累积骑行里程达到300公里",
+        "奖励": "1公里=15积分"
+    },
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon4.png",
+        "称号": "达人骑手",
+        "升级条件": "累积骑行里程达到450公里",
+        "奖励": "1公里=20积分"
+    },
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon5.png",
+        "称号": "职业骑手",
+        "升级条件": "累积骑行里程达到600公里",
+        "奖励": "1公里=25积分"
+    },
+    {
+        "等级": "https://bigmonk.github.io/AboutUT/img/level/icon6.png",
+        "称号": "圣骑士",
+        "升级条件": "累积骑行里程达到800公里",
+        "奖励": "1公里=30积分"
+    }
+]
