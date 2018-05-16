@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>图像交换</title>
+		<style type="text/css">
+			html,
+			body,
+			p,
+			span,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			em,
+			img,
+			ins,
+			small,
+			strong,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			iframe {
+				margin: 0px;
+				padding: 0px;
+				/*
+  用来取消一些标签默认的margin和padding  */
+			}
+			
+			body {
+				text-align: center;
+			}
+			
+			#father {
+				position: relative;
+				margin: auto;
+				width: 800px;
+				height: 600px;
+				border-style: solid;
+			}
+			
+			#header {
+				height: 100px;
+				width: 800px;
+				background-image: url("images/bg2.jpg");
+			}
+			
+			#daohang {
+				height: 30px;
+				width: 800px;
+				background-color: #99FFFF;
+			}
+			
+			#left {
+				width: 180px;
+				height: 440px;
+				background-color: #F0FFFF;
+			}
+			
+			#right {
+				position: absolute;
+				top: 130px;
+				left: 180px;
+				height: 440px;
+				width: 620px;
+				text-align: left;
+			}
+			
+			#footer {
+				position: absolute;
+				top: 570px;
+				height: 30px;
+				width: 800px;
+				background-color: #99FFFF;
+			}
+			
+			#header h1 {
+				height: 3em;
+				line-height: 3em;
+				overflow: hidden;
+				letter-spacing: 5px;
+			}
+			
+			a {
+				height: 2em;
+				line-height: 2em;
+				overflow: hidden;
+				text-decoration: none;
+			}
+			
+			p {
+				height: 2em;
+				line-height: 2em;
+				overflow: hidden;
+			}
+			
+			ul {
+				list-style-type: none;
+			}
+			
+			li {
+				padding: 10px;
+			}
+			
+			#apply {
+				font-size: 30px;
+				font-weight: bold;
+			}
+			
+			.ftcss {
+				font-family: 宋体, sans-serif;
+				font-size: 12pt;
+				color: #0011aa;
+				text-align: left;
+				text-indent: 2em;
+				line-height: 1.8;
+			}
+			
+			.bold {
+				font-weight: 600;
+			}
+			
+			.italic {
+				font-style: italic;
+			}
+			
+			.underline {
+				text-decoration: underline;
+			}
+		</style>
+		<script type="text/javascript" src="changeimg.js"></script>
+	</head>
+
+	<body>
+		<p id="father">
+			<p id="header">
+				<h1 class="title">&nbsp;&nbsp;&nbsp;&nbsp;软件开发基础-实验</h1></p>
+			<p id="daohang">
+				<a href="../test1/test1-index.html" class="one">实验一</a>
+				<a href="../test2/test2-html.html" class="two">实验二</a>
+				<a href="../test3/test3-jsimg.html" class="three">实验三</a>
+				<a href="" class="four">实验四</a>
+				<a href="" class="five">实验五</a>
+				<a href="" class="six">实验六</a>
+				<a href="" class="seven">实验七</a>
+				<a href="" class="eight">实验八</a>
+			</p>
+			<p id="left">
+				<ul>
+					<li id="apply">JS应用</li>
+					<li id="formathtml">
+						<a href="test3-jsimg.html">图像交换</a>
+					</li>
+					<li id="formatfont">
+						<a href="test3-jsmin.html">网页秒表</a>
+					</li>
+					<li id="formattable">
+						<a href="test3-jstable.html">表格编辑</a>
+					</li>
+				</ul>
+			</p>
+			<p id="right">
+				<br/>
+				<h2>图像交换</h2>
+				<br/>
+				<img src="images/forest1.jpg" id='image' style="width: 400px; height: 200px;" onMouseOut="changeImg('images/forest1.jpg')" onMouseOver="changeImg('images/forest2.jpg')" onClick="changeImg('images/forest3.jpg')" />
+				<!-- onMouseOut鼠标移出指定对象时的效果 -->
+				<!-- onMouseOver鼠标移动到指定对象上的效果 -->
+				<!-- onClick鼠标完成一次点击（按下&松开）的效果 -->
+				<!-- onMouseDown鼠标完成按下的瞬间产生的效果 -->
+				<!-- onMouseUp鼠标完成松开的瞬间产生的效果 -->
+				<br/>
+
+				<input type="button" value="增大" onclick="bigger()" />
+				<input type="button" value="增小" onclick="smaller()" />
+			</p>
+			<p id="footer">
+				<p>2015-2016-1学期&nbsp;软件工程</p>
+			</p>
+		</p>
+		<script type="text/javascript">
+			var x = 400;
+			var y = 200;
+
+			function bigger() {
+				var p = document.getElementById('image');
+				p.style.width = new String(x++) + 'px';
+				p.style.height = new String(y++) + 'px';
+
+			}
+
+			function smaller() {
+				var q = document.getElementById('image');
+				q.style.width = new String(x--) + 'px';
+				q.style.height = new String(y--) + 'px';
+			}
+		</script>
+	</body>
+
+</html>
