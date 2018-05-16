@@ -2,7 +2,7 @@
     {
         "icon": "https://bigmonk.github.io/AboutUT/img/level/icon1.png",
         "honor": "见习骑手",
-        "condition": "初始icon",
+        "condition": "初始等级",
         "reward": "1公里=5积分"
     },
     {
